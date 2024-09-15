@@ -2198,7 +2198,7 @@ class FeatureTestMacros:
 
                 entry = dict()
                 entry["value"] = value
-                entry["implemented"] = self.implemented_ftms[ftm][std] != None
+                entry["implemented"] = self.implemented_ftms[ftm][std] == self.standard_ftms[ftm][std]
                 entry["need_undef"] = need_undef
                 entry["condition"] = self.ftm_metadata[ftm]["libcxx_guard"]
 

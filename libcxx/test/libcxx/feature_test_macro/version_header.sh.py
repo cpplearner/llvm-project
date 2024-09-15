@@ -50,8 +50,7 @@ test(
 #    define __cpp_lib_barrier 201907L
 #  endif
 // define __cpp_lib_format 202110L
-#  undef __cpp_lib_variant
-#  define __cpp_lib_variant 202106L
+// define __cpp_lib_variant 202106L
 #endif // _LIBCPP_STD_VER >= 20
 
 #if _LIBCPP_STD_VER >= 23
@@ -64,8 +63,7 @@ test(
 #    define __cpp_lib_barrier 299900L
 #  endif
 // define __cpp_lib_format 202311L
-#  undef __cpp_lib_variant
-#  define __cpp_lib_variant 202306L
+// define __cpp_lib_variant 202306L
 #endif // _LIBCPP_STD_VER >= 26
 
 #endif // _LIBCPP_VERSION

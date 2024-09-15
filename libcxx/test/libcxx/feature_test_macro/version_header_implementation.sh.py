@@ -68,7 +68,7 @@ test(
             {
                 "__cpp_lib_variant": {
                     "value": "202106L",
-                    "implemented": True,
+                    "implemented": False,
                     "need_undef": True,
                     "condition": None,
                 },
@@ -104,8 +104,8 @@ test(
             {
                 "__cpp_lib_variant": {
                     "value": "202306L",
-                    "implemented": True,
-                    "need_undef": True,
+                    "implemented": False,
+                    "need_undef": False,
                     "condition": None,
                 },
             },

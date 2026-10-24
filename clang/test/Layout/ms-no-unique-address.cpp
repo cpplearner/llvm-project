@@ -39,15 +39,15 @@ namespace Empty {
     [[msvc::no_unique_address]] A3 a;
     int i;
   };
-  static_assert(sizeof(D) == 8);
+  static_assert(sizeof(D) == 4);
 
   // CHECK:*** Dumping AST Record Layout
   // CHECK:          0 | struct Empty::D
   // CHECK-NEXT:     0 |   struct Empty::A3 a (empty)
   // CHECK-NEXT:     0 |     struct Empty::A a (empty)
-  // CHECK-NEXT:     4 |   int i
-  // CHECK-NEXT:       | [sizeof=8, align=4,
-  // CHECK-NEXT:       |  nvsize=8, nvalign=4]
+  // CHECK-NEXT:     0 |   int i
+  // CHECK-NEXT:       | [sizeof=4, align=4,
+  // CHECK-NEXT:       |  nvsize=4, nvalign=4]
 
   struct E {
     [[msvc::no_unique_address]] A a1;

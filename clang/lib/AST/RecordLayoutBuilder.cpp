@@ -3048,8 +3048,7 @@ void MicrosoftRecordLayoutBuilder::layoutField(const FieldDecl *FD) {
 
   const CXXRecordDecl *FieldClass = FD->getType()->getAsCXXRecordDecl();
   bool IsOverlappingEmptyField = FD->isPotentiallyOverlapping() &&
-                                 FieldClass->isEmpty() &&
-                                 FieldClass->fields().empty();
+                                 FieldClass->isEmpty();
   CharUnits FieldOffset = CharUnits::Zero();
 
   if (UseExternalLayout) {
